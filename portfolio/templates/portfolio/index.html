@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>injeolme Portfolio</title>
+
+
+  <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/Dogfalo/materialize/master/dist/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="/../../../static/css/style.css">
+
+
+</head>
+
+<body>
+  <div class="intro deep-orange lighten-2 z-depth-1">
+    <h1 class="grey-text text-lighten-5">Welcome injeolme-portfolio</h1>
+    <div id="mouse_event">
+      <button v-if="job == 'Web Developer'" v-on:click="change_job"> <h5 class="grey lighten-4 grey-text text-darken-1"> Web Developer </h5> </button>
+      <button v-if="job == 'System Developer'" v-on:click="change_job"> <h5 class="grey lighten-4 grey-text text-darken-1"> System Developer </h5> </button>
+    </div>
+  </div>
+ <div class="container about">
+        <h5>about me</h5>
+        <h6>let me introduce my self</h6>
+        <hr>
+        <div class="row">
+          <div class="col s12 m4 l4">
+            <h6>Who am i</h6>
+            <p>- Unifox 동아리 7기 부장 </p>
+            <p>- 선린인터넷고등학교 111대 학생회 청사진</p>
+            <p>- Javascript와 CSS를 통해 웹 프론트를 공부하고 있습니다.</p>
+            <p>- 백엔드로는 node.js, 프론트엔드로는 vue.js 와 같은 javascript 프레임워크에도 관심이 있습니다. </p>
+            <p>- 1,2학년 때부터 운영체제 개발 및 분석을 통해 시스템을 공부했습니다.</p>
+          </div>
+          <div class="col s12 m4 l4">
+            <h6>Profile</h6>
+            <div class="card blue-grey darken-1">
+              <div class="card-content white-text">
+                <img src="http://labs.qnimate.com/portfolio-materialize/images/profile.png" width="64" height="64">
+<!--이름!-->    <p>현재는 Javascript로 프론트를 공부하고 있지만 나중에는 JS 풀스택 개발자가 되고 싶은 윤철민입니다.</p>
+              </div>
+              <div class="card-action">
+                <a href="https://github.com/injeolme">Github</a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m4 l4">
+            <h6>current ability</h6> <!-- 개발 가능 언어 !-->
+            <ul class="collapsible">
+              <li class="active">
+                <div class="collapsible-header"><i class="mdi-av-web"></i>C</div>
+                <div class="collapsible-body"><p>운영체제, 동아리 C언어 수업 진행</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="mdi-editor-format-align-justify"></i>Javascript</div>
+                <div class="collapsible-body"><p>ES6 Syntax, Vue.js</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="mdi-av-play-shopping-bag"></i>CSS(scss)</div>
+                <div class="collapsible-body"><p>SCSS Syntax, materialize</p></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="mdi-editor-insert-comment"></i>More Learn</div>
+                <div class="collapsible-body"><p>Javascript framework, node.js ...</p></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="container portfolio">
+        <h5>portfolio</h5>
+        <h6>MY LATEST PROJECTS</h6>
+        <hr>
+        <div class="row">
+          <div class="col s12 m12 l12 portfolio-holder">
+            <img class="materialboxed" src="../../../static/javascript.png"> <!-- sass syntax -> sass!-->
+            <img class="materialboxed" src="../../../static/scss.png"> <!-- javascript es6 syntax !-->
+            <img class="materialboxed" src="../../../static/operating_system.png"> <!-- 운영체제 제작 !-->
+            </div>
+        </div>
+      </div>
+      <div class="container about">
+        <div class="row">
+          <div class="col s12 m4 l4">
+            <a href = "https://github.com/injeolme/markdown/blob/master/ES6_syntax.md"><h6>ES6</h6></a>
+            <p>ES6 문법을 공부하기 위해 git과 markdown을 이용하여 간략한 문법 정리 페이지를 만들었습니다.</p>
+          </div>
+          <div class="col s12 m4 l4">
+            <a href = "https://github.com/injeolme/markdown/blob/master/SCSS_syntax.md"><h6>SCSS</h6></a>
+            <p>CSS 전처리기인, SCSS를 공부하기 위해 git과 markdown을 이용하여 문법 정리 페이지를 만들었습니다.</p>
+          </div>
+          <div class="col s12 m4 l4">
+            <a href = "https://github.com/injeolme/Operating_System"><h6>Operating System</h6></a>
+            <p>64비트 멀티코어 OS 원리와 구조에 나오는 까마귀 OS를 통해 공부한 운영체제 소스입니다.</p>
+          </div>
+        </div>
+      </div>
+<div class="container contact">
+        <h5>contact</h5>
+        <h6>get in touch with me</h6>
+        <hr>
+        <div class="row">
+          <div class="col s4 m6 l6 contact-holder">
+            <h6 class="mdi-action-home">E-Mail</h6>
+            <p>ycm990503@gmail.com</p>
+          </div>
+          <div class="col s4 m6 l6 contact-holder">
+            <h6 class="mdi-hardware-phone-android">Phone Number</h6>
+            <p>010-5808-6462</p>
+          </div>
+        </div>
+      </div>
+        <footer>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">Link</a>
+            </div>
+          </div>
+        </footer>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdn.rawgit.com/Dogfalo/materialize/master/dist/js/materialize.min.js'></script>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="/../../../static/js/index.js"></script>
+  <script>
+    var mouse = new Vue({
+      el: '#mouse_event',
+      data: {
+        job: 'Web Developer'
+      },
+      methods: {
+        change_job: function(event) {
+          if (this.job == "Web Developer") {
+            this.job = "System Developer";
+          }
+          else {
+            this.job = "Web Developer";
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
